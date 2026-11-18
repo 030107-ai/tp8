@@ -1,0 +1,40 @@
+{
+  "parks": [
+    {
+      "id": "gWALBFxDFFw",
+      "name": "Dream Park",
+      "photo": "https://picsum.photos/seed/dreampark/120/120",
+      "nbLikes": 580,
+      "openingDate": "2015-06-20",
+      "hours": "9h00 - 21h00",
+      "location": "Tunis"
+    },
+    {
+      "id": "yKLG8FxABCe",
+      "name": "Hannibal Park",
+      "photo": "https://picsum.photos/seed/hannibalpark/120/120",
+      "nbLikes": 8605,
+      "openingDate": "2020-12-17",
+      "hours": "10h00 - 22h00",
+      "location": "Hammamet"
+    },
+    {
+      "id": "aABCDEFgHij",
+      "name": "Alyssa Park",
+      "photo": "https://picsum.photos/seed/alyssapark/120/120",
+      "nbLikes": 424,
+      "openingDate": "2018-04-05",
+      "hours": "10h00 - 20h00",
+      "location": "Sousse"
+    },
+    {
+      "id": "PoIUYTREZAm",
+      "name": "Amilcar Park",
+      "photo": "https://picsum.photos/seed/amilcarpark/120/120",
+      "nbLikes": 4263,
+      "openingDate": "2012-08-01",
+      "hours": "9h30 - 23h00",
+      "location": "Carthage"
+    }
+  ]
+}
