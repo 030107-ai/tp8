@@ -1,11 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { ParkService } from '../../services/park-service';
-import { Park } from '../../models/park';
+import { ParkItem } from '../park-item/park-item';
 
 @Component({
   selector: 'app-park-list',
-  imports: [RouterLink],
+  imports: [ParkItem],
   templateUrl: './park-list.html',
   styleUrl: './park-list.css',
 })
@@ -19,17 +19,5 @@ export class ParkList implements OnInit {
     this.parkService.getParks().subscribe({
       error: () => this.router.navigate(['/error']),
     });
-  }
-
-  onLike(park: Park): void {
-    this.parkService
-      .updatePark({ ...park, nbLikes: park.nbLikes + 1 })
-      .subscribe({ error: () => this.router.navigate(['/error']) });
-  }
-
-  onDelete(park: Park): void {
-    this.parkService
-      .deletePark(park.id)
-      .subscribe({ error: () => this.router.navigate(['/error']) });
   }
 }
